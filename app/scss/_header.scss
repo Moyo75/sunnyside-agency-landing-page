@@ -1,0 +1,157 @@
+.header {
+  min-height: 766.5px;
+  background: url("../../images/desktop/image-header.jpg") no-repeat center
+    center / cover;
+
+  @include breakpoint-down(600px) {
+    background: url("../../images/mobile/image-header.jpg") no-repeat center
+      center/cover;
+    min-height: 535.5px;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px;
+
+    @include breakpoint-down(400px) {
+      padding: 25px 25px 30px 25px;
+      margin-bottom: 32px;
+    }
+  }
+
+  .hide-for-mobile {
+    @include breakpoint-down(1024px) {
+      display: none;
+    }
+  }
+
+  .hide-for-desktop {
+    @include breakpoint-up(1024px) {
+      display: none;
+    }
+  }
+
+  .logo {
+    text-decoration: none;
+    color: $white;
+    font-size: 2rem;
+    font-weight: $font-weight-large;
+
+    @include breakpoint-down(600px) {
+      font-size: 24px;
+      font-weight: $font-weight-medium;
+    }
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-family: "Barlow", sans-serif;
+    font-size: 18px;
+    min-width: 35%;
+    margin-right: 20px;
+
+    @include breakpoint-between(1024px, 1150px) {
+      min-width: 52%;
+    }
+    @include breakpoint-between(1150px, 1300px) {
+      min-width: 45%;
+    }
+
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+
+    button {
+      border: none;
+      padding: 17px 36px;
+      font-size: 15px;
+      font-weight: $font-weight-small;
+      border-radius: 30px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
+
+  .hamburger {
+    height: 3.5px;
+    width: 33px;
+    background: $white;
+    @include breakpoint-down(600px) {
+      height: 1.7px;
+      width: 25px;
+    }
+  }
+
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    position: absolute;
+    height: 3.5px;
+    width: 33px;
+    background: $white;
+
+    @include breakpoint-down(600px) {
+      height: 1.7px;
+      width: 25px;
+    }
+  }
+
+  .hamburger::after {
+    transform: translateY(-11px);
+    @include breakpoint-down(600px) {
+      transform: translateY(-9px);
+    }
+  }
+  .hamburger::before {
+    transform: translateY(11px);
+    @include breakpoint-down(600px) {
+      transform: translateY(9px);
+    }
+  }
+
+  .hamburger-container:hover {
+    cursor: pointer;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+
+    h1 {
+      color: $white;
+      font-size: 56px;
+      font-weight: $font-weight-large;
+      letter-spacing: 7px;
+      text-transform: uppercase;
+
+      @include breakpoint-down(800px) {
+        text-align: center;
+        font-size: 39px;
+      }
+    }
+
+    i {
+      color: $white;
+      font-size: 120px;
+
+      @include breakpoint-down(400px) {
+        margin-top: -18px;
+      }
+      @include breakpoint-between(800px, 1024px) {
+        margin-top: 45px;
+      }
+
+      @include breakpoint-between(533px, 800px) {
+        margin-top: 66px;
+      }
+    }
+  }
+}
