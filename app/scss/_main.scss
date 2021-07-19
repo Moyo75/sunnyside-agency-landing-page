@@ -8,7 +8,9 @@
     grid-template-columns: 1fr;
   }
 
-  .transform-your-brand {
+  //   Row 1 and 2 sub header text
+
+  .sub-header-text-row-1-and-2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,13 +83,116 @@
     }
   }
 
-  img {
+  .transform-your-brand {
+    @include breakpoint-down(700px) {
+      grid-row: 2;
+      grid-column: 1;
+    }
+  }
+
+  .stand-out {
+    @include breakpoint-down(700px) {
+      grid-row: 4;
+      grid-column: 1;
+    }
+  }
+
+  //   Row 1 and 2 sub header image
+
+  .sub-header-image-row-1-and-2 {
     width: 100%;
     height: 100%;
 
     @include breakpoint-down(700px) {
       grid-row: 1;
       grid-column: 1;
+    }
+  }
+
+  .image-transform {
+    width: 100%;
+    height: 100%;
+
+    @include breakpoint-down(700px) {
+      grid-row: 1;
+      grid-column: 1;
+    }
+  }
+
+  .image-stand-out {
+    width: 100%;
+    height: 100%;
+
+    @include breakpoint-down(700px) {
+      grid-row: 3;
+      grid-column: 1;
+    }
+  }
+
+  //   Row 3
+  .row-3-subheader {
+    height: 633px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-left: 212px;
+    padding-right: 197px;
+
+    @include breakpoint-down(700px) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    @include breakpoint-between(700px, 727px) {
+      padding-left: 46px;
+      padding-right: 41px;
+    }
+    @include breakpoint-between(727px, 756px) {
+      padding-left: 59px;
+      padding-right: 43px;
+    }
+    @include breakpoint-up(756px) {
+      padding-left: 63px;
+      padding-right: 41px;
+    }
+
+    h1 {
+      font-size: 29px;
+      font-weight: $font-weight-large;
+      color: $darkDesaturatedCyan;
+      text-transform: capitalize;
+    }
+
+    p {
+      font-size: 16px;
+      font-family: "Barlow", sans-serif;
+      text-align: center;
+      line-height: 27px;
+
+      @include breakpoint-down(700px) {
+        font-size: 18px;
+      }
+    }
+  }
+  //   Row 3: Graphic Design
+  .graphic-design {
+    background: url("../../images/desktop/image-graphic-design.jpg") no-repeat
+      center center / cover;
+
+    p {
+      color: $darkModerateCyan;
+    }
+  }
+
+  //   Row 3: Photography
+  .photography {
+    background: url("../../images/desktop/image-photography.jpg") no-repeat
+      center center / cover;
+
+    p {
+      color: $darkBlue;
     }
   }
 }
