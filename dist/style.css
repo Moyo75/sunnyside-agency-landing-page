@@ -768,4 +768,23 @@ body {
     width: 10.5%;
   }
 }
+
+.footer .attribution {
+  padding-bottom: 10px;
+}
+
+.footer .attribution a {
+  text-decoration: none;
+}
+
+.footer .attribution a:last-of-type {
+  color: #2563eb;
+}
+
+@media (max-width: 500px) {
+  .footer .attribution {
+    text-align: center;
+    padding: 0px 25px 10px 25px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
