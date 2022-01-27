@@ -1,7 +1,6 @@
 # Sunnyside
 
-A nice responsive landing page using Grid and Flexbox.
-
+A nice responsive landing page using  <img style="width: 25px; margin-bottom: -6px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png">.
 ## Overview
 
 Sunnyside is a landing page project suggestion from [Frontend Mentors](https://www.frontendmentor.io/), which I decided to work on alone to use CSS Grid. The project took about a week til completion.
