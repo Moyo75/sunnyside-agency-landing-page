@@ -1,6 +1,8 @@
 # Sunnyside
-
 A nice responsive landing page using Sass.
+
+![image](https://user-images.githubusercontent.com/45404945/155384498-507bca69-8773-45ed-af80-85c1a92852d5.png)
+
 ## Overview
 
 Sunnyside is a landing page project suggestion from [Frontend Mentors](https://www.frontendmentor.io/), which I decided to work on alone to use CSS Grid. The project took about a week til completion.
