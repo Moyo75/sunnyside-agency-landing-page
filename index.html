@@ -12,42 +12,71 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="dist/style.css" />
+    <link rel="stylesheet" href="./output.css" />
 
     <title>Frontend Mentor | Sunnyside agency landing page</title>
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
-      <nav>
-        <a href="#" class="logo" target="_blank" rel="noopener noreferrer"
+    <header
+      class="bg-cover bg-no-repeat bg-center min-h-[766.5px] max-[600px]:min-h-[535.5px]"
+      style="background-image: url(./images/desktop/image-header.jpg)"
+    >
+      <nav
+        class="flex justify-between items-center px-50px py-30px max-[400px]:px-30px max-[400px]:pt-25px max-[400px]:pb-30px max-[400px]:mb-32px"
+      >
+        <a
+          href="#"
+          class="decoration-none text-white text-[32px] font-black max-[400px]:text-[24px] max-[400px]:font-700"
+          target="_blank"
+          rel="noopener noreferrer"
           >sunnyside</a
         >
 
-        <ul class="hide-for-mobile">
+        <ul
+          class="flex justify-between items-center list-none text-[18px] mr-20px font-['Barlow'] min-w-[35%] max-[1024px]:hidden min-[1024px]:max-[1150px]:min-w-[52%] min-[1150px]:max-[1300px]:min-w-[45%]"
+        >
           <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer"
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="decoration-none text-white"
               >About</a
             >
           </li>
           <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer"
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="decoration-none text-white"
               >Services</a
             >
           </li>
           <li>
-            <a href="http://" target="_blank" rel="noopener noreferrer"
+            <a
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="decoration-none text-white"
               >Projects</a
             >
           </li>
           <li>
-            <button href="http://" target="_blank" rel="noopener noreferrer">
+            <button
+              href="http://"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="border-none uppercase px-36px py-17px font-light rounded-[30px] cursor-pointer"
+            >
               Contact
             </button>
           </li>
         </ul>
 
-        <div class="hamburger-container hide-for-desktop">
-          <div class="hamburger hide-for-desktop"></div>
+        <div class="hamburger-container min-[1024px]:hidden">
+          <div class="hamburger min-[1024px]:hidden"></div>
         </div>
       </nav>
 
@@ -195,12 +224,13 @@
         <li><img src="./images/icon-pinterest.svg" alt="Pinterest" /></li>
       </ul>
 
-      <div class="attribution">
+      <div class="attribution text-red-500 hover:text-sky-400">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >
-        | Coded by <a href="https://twitter.com/AdemoyeJohn">@John</a>
+        | Coded by
+        <a href="https://twitter.com/AdemoyeJohn">@John Ademoye</a>
       </div>
     </footer>
   </body>

@@ -1,59 +1,59 @@
 .header {
-  min-height: 766.5px;
-  background: url("../../images/desktop/image-header.jpg") no-repeat center
-    center / cover;
+  // min-height: 766.5px;
+  // background: url("../../images/desktop/image-header.jpg") no-repeat center
+  //   center / cover;
 
-  @include breakpoint-down(600px) {
-    background: url("../../images/mobile/image-header.jpg") no-repeat center
-      center/cover;
-    min-height: 535.5px;
-  }
+  // @include breakpoint-down(600px) {
+  //   background: url("../../images/mobile/image-header.jpg") no-repeat center
+  //     center/cover;
+  //   min-height: 535.5px;
+  // }
 
   nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 50px;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // padding: 30px 50px;
 
-    @include breakpoint-down(400px) {
-      padding: 25px 25px 30px 25px;
-      margin-bottom: 32px;
-    }
+    // @include breakpoint-down(400px) {
+    //   padding: 25px 25px 30px 25px;
+    //   margin-bottom: 32px;
+    // }
   }
 
   .hide-for-mobile {
-    @include breakpoint-down(1024px) {
-      display: none;
-    }
+    // @include breakpoint-down(1024px) {
+    //   display: none;
+    // }
   }
 
   .hide-for-desktop {
-    @include breakpoint-up(1024px) {
-      display: none;
-    }
+    // @include breakpoint-up(1024px) {
+    //   display: none;
+    // }
   }
 
   .logo {
-    text-decoration: none;
-    color: $white;
-    font-size: 2rem;
-    font-weight: $font-weight-large;
+    // text-decoration: none;
+    // color: $white;
+    // font-size: 2rem;
+    // font-weight: $font-weight-large;
 
-    @include breakpoint-down(600px) {
-      font-size: 24px;
-      font-weight: $font-weight-medium;
-    }
+    // @include breakpoint-down(600px) {
+    //   font-size: 24px;
+    //   font-weight: $font-weight-medium;
+    // }
   }
 
   ul {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    list-style: none;
-    font-family: "Barlow", sans-serif;
-    font-size: 18px;
-    min-width: 35%;
-    margin-right: 20px;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // list-style: none;
+    // font-family: "Barlow", sans-serif;
+    // font-size: 18px;
+    // min-width: 35%;
+    // margin-right: 20px;
 
     @include breakpoint-between(1024px, 1150px) {
       min-width: 52%;
