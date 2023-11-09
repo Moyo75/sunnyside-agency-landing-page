@@ -19,11 +19,11 @@
   <body>
     <!-- Header -->
     <header
-      class="bg-cover bg-no-repeat bg-center min-h-[766.5px] max-[600px]:min-h-[535.5px]"
+      class="header bg-cover bg-no-repeat bg-center min-h-[766.5px] max-[600px]:min-h-[535.5px]"
       style="background-image: url(./images/desktop/image-header.jpg)"
     >
       <nav
-        class="flex justify-between items-center px-50px py-30px max-[400px]:px-30px max-[400px]:pt-25px max-[400px]:pb-30px max-[400px]:mb-32px"
+        class="flex justify-between items-center px-[50px] py-[30px] max-[400px]:px-[30px] max-[400px]:pt-[25px] max-[400px]:pb-[30px] max-[400px]:mb-[32px]"
       >
         <a
           href="#"
@@ -32,9 +32,9 @@
           rel="noopener noreferrer"
           >sunnyside</a
         >
-
+        <!--  hide-for-mobile  -->
         <ul
-          class="flex justify-between items-center list-none text-[18px] mr-20px font-['Barlow'] min-w-[35%] max-[1024px]:hidden min-[1024px]:max-[1150px]:min-w-[52%] min-[1150px]:max-[1300px]:min-w-[45%]"
+          class="hide-for-mobile flex justify-between items-center list-none text-[18px] mr-[20px] font-['Barlow'] min-w-[35%] min-[1024px]:max-[1150px]:min-w-[52%] min-[1150px]:max-[1300px]:min-w-[45%]"
         >
           <li>
             <a
@@ -68,28 +68,40 @@
               href="http://"
               target="_blank"
               rel="noopener noreferrer"
-              class="border-none uppercase px-36px py-17px font-light rounded-[30px] cursor-pointer"
+              class="border-none uppercase px-[36px] py-[17px] font-light rounded-[30px] cursor-pointer font-600"
             >
               Contact
             </button>
           </li>
         </ul>
+        <!-- cursor-pointer min-[1024px]:hidden relative hamburger-container -->
+        <div class="hover:cursor-pointer hide-for-desktop">
+          <!-- hamburger h-[3.5px] w-[33px] bg-white absolute max-[600px]:w-[25px] max-[600px]:h-[1.7px] after:content-[''] before:content-[''] before:h-[3.5px] before:w-[33px] after:h-[3.5px] after:w-[33px] after:translate-y-[-11px] before:translate-y-[11px] max-[600px]:before:translate-y-[-9px] after:w-[33px] before:w-[33px] min-[1024px]:hidden max-[600px]:h-[1.7px] max-[600px]:h-[25px] max-[600px]:after:translate-y-[-9px]-->
 
-        <div class="hamburger-container min-[1024px]:hidden">
-          <div class="hamburger min-[1024px]:hidden"></div>
+          <!-- Tried tailwind pseudo properties but didn't work -->
+          <div class="hamburger h-[3.5px] w-[33px] bg-white"></div>
         </div>
       </nav>
 
-      <div class="header-content">
-        <h1>We are creatives</h1>
-        <i>&#8595;</i>
+      <div class="flex flex-col justify-center items-center mt-[10px]">
+        <h1
+          class="text-white uppercase tracking-[7px] text-[56px] font-900 max-[800px]:text-[56px] max-[800px]:text-center"
+        >
+          We are creatives
+        </h1>
+        <i
+          class="text-white text-[120px] max-[400px]:mt-[-18px] min-[800px]:max-[1024px]:mt-[45px] min-[533px]:max-[800px]:mt-[66px]"
+          >&#8595;</i
+        >
       </div>
     </header>
 
-    <!-- Subheader -->
-    <section class="sub-header">
-      <!-- Transform your brand -->
-      <div class="sub-header-text-row-1-and-2 transform-your-brand">
+    <!-- Subheader grid grid-cols-2 max-[700px]:grid-cols-1-->
+    <section class="sub-header grid grid-cols-2 max-[700px]:grid-cols-1">
+      <!-- Transform your brand sub-header-text-row-1-and-2 padding: max-[700px]:pt-[25px] max-[700px]:pr-[30px] max-[700px]:pb-[60px] max-[700px]:pl-[30px] max-[700px]:items-center max-[700px]:text-center max-[700px]:row-start-2 max-[700px]:col-span-1 -->
+      <div
+        class="sub-header-text-row-1-and-2 flex flex-col justify-center items-start pl-[166px] pr-[131px]"
+      >
         <h1>Transform your brand</h1>
         <p>
           We are a full-service creative agency specializing in helping brands
@@ -100,28 +112,30 @@
       </div>
       <img
         src="./images/desktop/image-transform.jpg"
-        class="sub-header-image-row-1-and-2 image-transform"
+        class="sub-header-image-row-1-and-2 image-transform w-[100%] h-[100%]"
         alt="transform image"
       />
 
       <!-- Stand out to the right audience -->
       <img
         src="./images/desktop/image-stand-out.jpg"
-        class="sub-header-image-row-1-and-2 image-stand-out"
+        class="sub-header-image-row-1-and-2 image-stand-out w-[100%] h-[100%]"
         alt="stand out image"
       />
       <div class="sub-header-text-row-1-and-2 stand-out">
         <h1>Stand out to the right audience</h1>
         <p>
           Using a collaborative formula of designers, researchers,
-          photographers, videographers, and copywriters, we’ll build and extend
+          photographers, videographers, and copywriters, we'll build and extend
           your brand in digital places.
         </p>
         <a href="#">learn more</a>
       </div>
 
       <!-- Graphic design -->
-      <div class="row-3-subheader graphic-design">
+      <div
+        class="row-3-subheader flex flex-col justify-end items-center h-[633px] graphic-design"
+      >
         <h1>Graphic design</h1>
         <p>
           Great design makes you memorable. We deliver artwork that underscores
@@ -140,10 +154,10 @@
     </section>
 
     <!-- Testimonial -->
-    <section class="testimonials">
+    <section class="testimonials flex flex-col justify-center items-center">
       <h2>Client testimonials</h2>
       <div class="testimonial-list">
-        <article class="testimonial emily">
+        <article class="emily flex flex-col justify-center items-center">
           <img
             src="./images/image-emily.jpg"
             width="70px"
@@ -157,7 +171,7 @@
           <h3>Emily R.</h3>
           <p>Marketing Director</p>
         </article>
-        <article class="thomas">
+        <article class="thomas flex flex-col justify-center items-center">
           <img
             src="./images/image-thomas.jpg"
             width="70px"
@@ -171,7 +185,7 @@
           <h3>Thomas S.</h3>
           <p>Chief Operating Officer</p>
         </article>
-        <article class="jennie">
+        <article class="jennie flex flex-col justify-center items-center">
           <img
             src="./images/image-jennie.jpg"
             width="70px"
@@ -189,7 +203,7 @@
     </section>
 
     <!-- Gallery -->
-    <section class="gallery">
+    <section class="gallery grid grid-cols-2">
       <img
         src="./images/desktop/image-gallery-milkbottles.jpg"
         alt="Milk bottles"
@@ -204,7 +218,7 @@
 
     <!-- Footer -->
 
-    <footer class="footer">
+    <footer class="footer flex flex-col justify-center items-center">
       <h2>sunnyside</h2>
       <ul>
         <li>
